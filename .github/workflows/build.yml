@@ -14,7 +14,7 @@ jobs:
       uses: actions/checkout@v2
     
     - name: Run build.sh script
-      run: bash hands-on-12/build.sh
+      run: bash build.sh
       working-directory: hands-on-12
 
     - name: Run Maven build
