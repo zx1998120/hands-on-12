@@ -13,8 +13,7 @@ jobs:
     - name: Check out repository
       uses: actions/checkout@v2
       
-    - name: Execute build.sh script
-      run: bash /Users/zhangxin/Desktop/hands-on-12/build.sh
-
-
-
+    - name: Run build.sh script
+      run: |
+        cd hands-on_12
+        bash build.sh
