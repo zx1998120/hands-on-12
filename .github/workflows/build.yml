@@ -15,5 +15,6 @@ jobs:
       
     - name: Execute build.sh script
       run: |
-        cd /Users/zhangxin/Desktop/hands-on-12/build.sh
+        cd /Users/zhangxin/Desktop/hands-on-12
         bash build.sh
+
