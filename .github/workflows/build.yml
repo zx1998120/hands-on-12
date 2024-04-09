@@ -15,8 +15,6 @@ jobs:
     
     - name: Run build.sh script
       run: bash build.sh
-      working-directory: hands-on-12
 
     - name: Run Maven build
       run: mvn clean install
-      working-directory: hands-on-12
