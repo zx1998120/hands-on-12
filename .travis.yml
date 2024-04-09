@@ -1,4 +1,4 @@
 language: java
 
 script:
-  - bash build.sh
+  - bash /Users/zhangxin/Downloads/hand-on_12/build.sh
