@@ -1,0 +1,22 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+    
+    - name: Run build.sh script
+      run: bash hands-on-12/build.sh
+      working-directory: hands-on-12
+
+    - name: Run Maven build
+      run: mvn clean install
+      working-directory: hands-on-12
