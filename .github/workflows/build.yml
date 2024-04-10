@@ -1,4 +1,4 @@
-name: Build and Generate Documentation
+name: Build
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build-and-docs:
+  build:
     runs-on: ubuntu-latest
     
     steps:    
@@ -15,13 +15,3 @@ jobs:
     
     - name: Run build.sh script
       run: bash build.sh
-      
-    - name: Generate Javadoc
-      run: javadoc -d docs/ src/
-      working-directory: hands-on-12
-
-    - name: Convert HTML to PDF
-      uses: thecodingmachine/gotenberg-action@v2
-      with:
-        files: "docs/**/*.html"
-        output: "docs/documentation.pdf"
